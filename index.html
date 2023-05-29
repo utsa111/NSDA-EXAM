@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Geometry Calculation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body style="background-color: beige;">
+    <header style="height: 100px;width: 100%;background-color: aqua;position: relative;">
+    </header>
+
+    <div id="left_container">
+        <div id="con">
+            <div style="margin-top: 5px;" id="triangle"></div>
+            <h3 style="margin-left: 35%;">Triangle</h3>
+            <h5 style="margin-left: 22%;">Area(A) = 0.5 * b * h</h5>
+            <div id="btn">
+                <input style="width: 55px;" type="text" id="base" name="name" required>
+                <label for="cm">CM</label>
+                <input style="width: 55px;" type="text" id="height" name="name" required>
+                <label for="cm">CM</label>
+            </div>
+            <button id="btnheight" class="mybutton" type="button">Calculate</button>
+        </div>
+
+
+
+
+
+
+       
+
+        <div id="con">
+            <div style="margin-top: 5px;" id="rectangle"></div>
+            <h3 style="margin-left: 35%;">Rectangle</h3>
+            <h5 style="margin-left: 30%;">Area(A) = W * L</h5>
+            <div id="btn">
+                <input style="width: 55px;" type="text" id="width" name="name" required>
+                <label for="cm">Width</label>
+                <input style="width: 55px;" type="text" id="length" name="name" required>
+                <label for="cm">Length</label>
+            </div>
+            <button id="btnArea" class="mybutton" type="button">Calculate</button>
+        </div>
+       
+
+
+
+
+
+
+
+        <div id="con">
+    <div style="margin-top: 5px;" id="parallelogram"></div>
+    <h3 style="margin-left: 35%;">Parallelogram</h3>
+    <h5 style="margin-left: 22%;">Area(A) = B * H</h5>
+    <div id="btn">
+        <input style="width: 55px;" type="text" id="base1" name="name" required>
+        <label for="cm">Base</label>
+        <input style="width: 55px;" type="text" id="height1" name="name" required>
+        <label for="cm">Height</label>
+    </div>
+    <button id="btn_Area" class="mybutton" type="button">Calculate</button>
+</div>
+
+
+
+
+<div id="con">
+    <div style="margin-top: 5px;" id="rhombus"></div>
+    <h3 style="margin-left: 35%;">Rhombus</h3>
+    <h5 style="margin-left: 22%;">Area(A) = 0.5 * D1 * D2</h5>
+    <div id="btn">
+        <input style="width: 55px;" type="text" id="diagonal1" name="diagonal1" required>
+        <label for="cm">CM</label>
+        <input style="width: 55px;" type="text" id="diagonal2" name="diagonal2" required>
+        <label for="cm">CM</label>
+    </div>
+    <button id="yy" class="mybutton" type="button" onclick="calculateRhombusArea()">Calculate</button>
+</div>
+
+
+
+
+
+<div id="con">
+    <div style="margin-top: 5px;" id="pentagon"></div>
+    <h3 style="margin-left: 35%;">Pentagon</h3>
+    <h5 style="margin-left: 15%;">Area(A) = (1/4) * sqrt(5 * (5 + 2 * sqrt(5))) * side^2</h5>
+    <div id="btn">
+        <label style="margin-left: 20%;" for="cm">CM</label>
+        <input style="width: 55px;" type="text" id="side" name="side" required>
+        
+    </div>
+    <button id="pp" class="mybutton" type="button" onclick="calculatePentagonArea()">Calculate</button>
+</div>
+        <div id="con">
+            <div style="margin-top: 5px;" id="ellipse"></div>
+            <h3 style="margin-left: 35%;">Ellipse</h3>
+            <h5 style="margin-left: 22%;">Area(A) = Pi * A * B</h5>
+            <div id="btn">
+                <input style="width: 55px;" type="text" id="A" name="name" required>
+            <label for="cm">CM</label>
+            <input style="width: 55px;" type="text" id="B" name="name" required>
+            <label for="cm">CM</label>
+            </div>
+            <button id="tt" class="mybutton" type="button">Calculate</button>
+        </div>
+    </div>
+    <div id="right_container">
+        <h1 style="margin-left: 25%;text-decoration: underline;">Area Calculation</h1>
+        <div id="triangleoutput"></div>
+        <div id="Rectangoutput"></div>
+        <div id="Parallelogramoutput"></div>
+        <div id="rombusresult"></div>
+        <div id="result"></div>
+        <div id="Ellipseoutput"></div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
